@@ -15,7 +15,10 @@
       padding: 0;
       text-align: center;
     }
-
+  .footer-link {
+    all: unset;       /* Elimina TODOS los estilos heredados */
+    cursor: pointer;  /* Se lo devolvemos porque all: unset lo quita */
+  }
     h1 {
       margin-top: 40px;
       font-size: 3rem;
@@ -130,7 +133,7 @@
 
   <footer>
     © 2026 Mi Arcade — Creado con ❤️ por Daniel
-    <a href="text/assolation/index.html">><</a>
+    <a href="text/assolation/index.html" class="footer_link">><</a>
   </footer>
 
 </body>
